@@ -1,5 +1,9 @@
+
+# A very simple Flask App Chelner for $1M
+
 from flask import Flask
 from flask import render_template
+from flask import redirect, url_for, request
 
 
 app = Flask(__name__)
@@ -109,7 +113,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'>QuickSort</li>  </ol></div>"
 
 @app.route('/about')
 
@@ -1188,3 +1192,126 @@ def queens( N ):
 
     return out
 
+@app.route('/projects/quicksort')
+
+def sort():
+
+    return render_template('form.html')
+
+@app.route('/projects/quicksort/inaction', methods = ['POST','GET'])
+
+def inaction():
+
+    if request.method == 'POST':
+
+        user = request.form['numbers']
+
+        return redirect(url_for('success',arr = user))
+
+    else:
+
+        user = request.args.get('numbers')
+
+        return redirect(url_for('success',arr = user))
+
+    return user
+
+# Bubble Sort Method in Action. O(n^2) Complexity.
+def bubblesort( arr ):
+
+    finished = False
+
+    swapped = False
+
+    size = len(arr)
+
+    while not finished:
+
+            swapped = False
+
+            for i in range(0, size - 1):
+
+              if arr[i] > arr[i+1]:
+
+                 arr[i], arr[i+1] = arr[i+1], arr[i]
+
+                 swapped = True
+
+            if swapped is True:
+
+                size -= 1
+
+            else:
+
+                finished = True
+    return arr
+
+@app.route('/success/<arr>')
+
+def success(arr):
+
+   vec = arr.split(",")
+
+   vec = list( map( int, vec ))
+
+   combosort( vec )
+
+   return '<span>Sorted Array:</span><h1>%s</h1> <style> span,h1{ font-size: 100px; background-color: yellow; color: mediumseagreen} </style>' % ' '.join(str(i) for i in vec)
+
+#Combo Sort in Action
+def combosort( vec ):
+
+    shrinkFactor = 1.3
+
+    swapped = True
+
+    size = len(vec)
+
+    gap = size
+
+    while gap > 1 or swapped is True:
+
+        if gap > 1:
+
+           gap = int(gap // shrinkFactor)
+
+        swapped = False
+
+        for i in range(0, size - gap):
+
+            if vec[i] > vec[i+gap]:
+                
+                vec[i], vec[i+gap] = vec[i+gap], vec[i]
+                
+                swapped = True
+
+
+
+#Quick Sort Method in Action using Divide Et Impera. Best Complexity
+def quicksort( arr ):
+
+    _quicksort(0, len( arr ) - 1, arr)
+
+def _swap(i, j, vec):
+    vec[i], vec[j] = vec[j], vec[i]
+
+def _quicksort(lo, hi, vec):
+
+    i = lo
+    j = hi
+
+    pivot = vec[(lo + hi) >> 1]
+
+    while(i <= j):
+        while vec[i] < pivot:
+            i += 1
+        while vec[j] > pivot:
+            j -= 1
+        if i <= j:
+            _swap(i,j, vec)
+            i += 1
+            j -= 1
+    if lo < j:
+       _quicksort(lo, j, vec)
+    if i < hi:
+       _quicksort(i, hi, vec)
