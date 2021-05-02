@@ -113,7 +113,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'>QuickSort</li>  </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> </ol></div>"
 
 @app.route('/about')
 
@@ -1254,7 +1254,7 @@ def success(arr):
 
    vec = list( map( int, vec ))
 
-   combosort( vec )
+   mergesort( vec )
 
    return '<span>Sorted Array:</span><h1>%s</h1> <style> span,h1{ font-size: 100px; background-color: yellow; color: mediumseagreen} </style>' % ' '.join(str(i) for i in vec)
 
@@ -1280,9 +1280,9 @@ def combosort( vec ):
         for i in range(0, size - gap):
 
             if vec[i] > vec[i+gap]:
-                
+
                 vec[i], vec[i+gap] = vec[i+gap], vec[i]
-                
+
                 swapped = True
 
 
@@ -1315,3 +1315,192 @@ def _quicksort(lo, hi, vec):
        _quicksort(lo, j, vec)
     if i < hi:
        _quicksort(i, hi, vec)
+
+def merge(left, m, right, vec):
+
+    i = left
+    j = m + 1
+    aux = []
+
+    while i <= m and j <= right:
+
+          if vec[i] < vec[j]:
+             aux.append(vec[i])
+             i += 1
+          else:
+             aux.append(vec[j])
+             j += 1
+
+    while i <= m:
+          aux.append(vec[i])
+          i += 1
+    while j <= right:
+          aux.append(vec[j])
+          j += 1
+    k = 0
+    for i in range(left, right+1):
+        vec[i] = aux[k];
+        k += 1
+
+def divideEtImpera(left, right, vec):
+
+    if left < right:
+            m = (left + right) >> 1
+            divideEtImpera(left, m, vec)
+            divideEtImpera(m + 1, right, vec)
+            merge(left, m, right, vec)
+
+def mergesort(vec):
+    divideEtImpera(0, len(vec) - 1, vec)
+
+
+class MyContainer:
+
+    def __init__(self, data):
+
+        self.data = data
+
+        self.len = len(data)
+
+        self.index = self.len
+
+    def __iter__(self):
+
+        return self
+
+    def __next__(self):
+
+        if self.index == 0:
+
+            raise StopIteration
+
+        self.index -= 1
+
+        return self.data[ self.index ]
+
+
+@app.route('/projects/iterator/<username>')
+
+def myiterator(username):
+
+    ob = MyContainer(username)
+
+    l = [x for x in ob]
+
+    out = "<span style='position: relative; left: 20%;font-size: 200px; background-color: yellow; color: mediumseagreen; font-weight: bold; font-family: verdana; padding: 10px; margin: 10px; text-align: center'>"
+    out += ''.join(str(x) for x in l)
+    out += "</span><h1>Iterator for looping over a sequence backwards</h1>"
+
+    footer = "<p>Created with Passion by <a href='http://thinkphp.github.io'>Adrian Statescu</a></p>"
+
+    SourceCode = """
+    <h1 style='color: #000; background-color: yellow'>
+    # Source Code </br>
+    class Reverse: </br>
+
+    def __init__(self, data): </br>
+
+        self.data = data </br>
+
+        self.len = len(data) </br>
+
+        self.index = self.len </br>
+
+    def __iter__(self): </br>
+
+        return self </br>
+
+    def __next__(self): </br>
+
+        if self.index == 0: </br>
+
+            raise StopIteration </br>
+
+        self.index -= 1 </br>
+
+        return self.data[ self.index ] </br>
+
+        # Usage
+        ob = Reverse("spam") </br>
+        for c in ob: </br>
+            print(c) </br>
+    </h1>
+    """
+
+    return out + SourceCode + footer
+
+class Primes:
+
+    def __init__(self, n):
+
+        self.n = n;
+
+        self.data = self.agreggator()
+
+        self.len = len(self.data)
+
+        self.index = -1
+
+    def agreggator(self):
+
+        count = 1
+
+        i = 2
+
+        list = []
+
+        while count <= self.n:
+
+            if self.isPrime(i) is True:
+
+                list.append(i)
+
+                count += 1
+
+            i += 1
+
+        return list
+
+    def __iter__(self):
+
+        return self
+
+    def __next__(self):
+
+        if self.index == self.len - 1:
+
+            raise StopIteration
+
+        self.index += 1
+
+        return self.data[ self.index ]
+
+    def isPrime(self, n):
+
+        i = 2
+
+        prime = True
+
+        while i * i <= n and prime is True:
+
+              prime = n % i != 0
+              i += 1
+
+        return prime
+
+
+@app.route('/projects/primes/<int:n>')
+
+def iterator_primes( n ):
+
+    ob = Primes(n)
+
+    list = [x for x in ob]
+
+    out = "<h1 style='background-color: yellow; font-size: 100px'>"
+
+    out += ', '.join(str(x) for x in list)
+
+    out += "</h1>"
+
+    return out
