@@ -73,3 +73,4 @@ index.html
 Reference
 - https://linuxize.com/post/how-to-install-flask-on-ubuntu-20-04/
 - https://flask.palletsprojects.com/en/1.1.x/quickstart/
+- https://testdriven.io/blog/combine-flask-vue/
