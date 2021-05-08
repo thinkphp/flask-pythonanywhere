@@ -2,6 +2,19 @@
 
 http://thinkphp.pythonanywhere.com/
 
+- python3 -V
+- sudo apt install python3-venv
+- mkdir flask_app && cd flask_app
+- python3 -m venv venv
+- source venv/bin/activate
+- (venv) $ pip install Flask
+- (venv) $ python -m flask --version
+- (venv) $ export FLASK_APP=hello.py
+- (venv) $ echo $FLAS_APP
+- (venv) $ hello.py # ok
+- (venv) $ flask run --host=0.0.0.0 --port=5000 #run in container
+
+
 ```Python
 from flask import Flask
 app = Flask(__name__)
@@ -17,15 +30,15 @@ export FLASK_APP=app.py
 
 echo $FLASK_APP
 
-flask run --host=0.0.0.0
+flask run --host=0.0.0.0 0 ==port=3000
+    
 
 
 ## Template
 
+```
 from flask import Flask, render_template
 
-
-```python
 app = Flask(__name__)
 
 @app.route("/")
@@ -56,3 +69,7 @@ index.html
     </body>
 </html>
 ```
+
+Reference
+- https://linuxize.com/post/how-to-install-flask-on-ubuntu-20-04/
+- https://flask.palletsprojects.com/en/1.1.x/quickstart/
