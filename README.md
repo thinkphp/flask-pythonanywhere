@@ -13,6 +13,7 @@ http://thinkphp.pythonanywhere.com/
 - (venv) $ export FLASK_APP=hello.py
 - (venv) $ echo $FLASK_APP
 - (venv) $ hello.py # ok
+- (venv) $ sudo ufw allow 5000
 - (venv) $ flask run --host=0.0.0.0 --port=5000 #run in container
 
 
