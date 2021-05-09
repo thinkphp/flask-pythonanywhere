@@ -9,8 +9,9 @@ http://thinkphp.pythonanywhere.com/
 - source venv/bin/activate
 - (venv) $ pip install Flask
 - (venv) $ python -m flask --version
+- (venv) $ pip freeze
 - (venv) $ export FLASK_APP=hello.py
-- (venv) $ echo $FLAS_APP
+- (venv) $ echo $FLASK_APP
 - (venv) $ hello.py # ok
 - (venv) $ flask run --host=0.0.0.0 --port=5000 #run in container
 
