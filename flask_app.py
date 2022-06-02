@@ -113,7 +113,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'>Sorting By Counting</li></ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'>Sorting By Counting</li> <li><a href='projects/insertsort/1234321'>Insertion Sort</li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li></ol></div>"
 
 @app.route('/about')
 
@@ -1628,3 +1628,68 @@ def countingsorting( n ):
     output = ' '.join(str(i) for i in arr)
 
     return '<h2>Counting Sort</h2><h1 style="background-color: lightgreen; font-size: 40px">' + input + '</h1>' + '<br/>' + '<h1 style="background-color: yellow; font-size: 40px">'  + output + '</h1>'
+
+def insertionsort( arr, n ):
+
+    for i in range(1, n):
+        aux = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] >= aux:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = aux
+
+@app.route('/projects/insertsort/<int:n>')
+
+def insertsorting(  n ):
+
+    arr = [9,8,7,6,-5,4,3,2,1,0,-1]
+
+    input =  ' '.join(str(i) for i in arr)
+
+    insertionsort(arr, len(arr))
+
+    output = ' '.join(str(i) for i in arr)
+
+    return '<h2>Insert Sort</h2><h1 style="background-color: lightgreen; font-size: 40px">' + input + '</h1>' + '<br/>' + '<h1 style="background-color: yellow; font-size: 40px">'  + output + '</h1>'
+
+@app.route('/projects/depressionForm/<int:n>')
+
+def depressionFormRelief( n ):
+
+    arr = []
+
+    while n:
+        x = n % 10
+        arr.append(x)
+        n //= 10
+
+    arr = reverse(arr)
+
+    i = 0
+
+    n = len(arr)
+
+    while i < n - 1 and arr[ i ] > arr[ i + 1 ]:
+
+          i += 1
+
+    if i == 0 or i == n - 1:
+
+       out = "<h1 style='background-color: lightgreen; font-size: 40px'>Not Aspect of Depression</h1>" + '<h1>' +' '.join(str(i) for i in arr) + '</h1>'
+
+    else:
+
+       while i < n - 1 and arr[i] < arr[i+1]:
+
+             i += 1
+
+       if i == n - 1:
+
+         out = "<h1 style='background-color: lightgreen; font-size: 40px'>Aspect of Depression Relief</h1>" + '<h1>' +' '.join(str(i) for i in arr) + '</h1>'
+
+       else:
+
+         out = "<h1 style='background-color: lightgreen; font-size: 40px'>Not Aspect of Depression</h1>" + '<h1>' +' '.join(str(i) for i in arr) + '</h1>'
+
+    return out
