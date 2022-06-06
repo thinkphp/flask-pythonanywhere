@@ -114,7 +114,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li>  </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li>  <li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li>  </ol></div>"
 
 @app.route('/about')
 
@@ -1866,3 +1866,85 @@ def jumpsearch(n):
         result += "<br/>"
 
     return "<h1>" + result + "</h1>"
+
+def up( child ):
+
+    parent = child // 2
+
+    while parent != 0:
+
+          if Heap[parent] >= Heap[child]:
+
+             Heap[parent], Heap[child] = Heap[child], Heap[parent]
+
+             child = parent
+
+             parent = child // 2
+          else:
+              break
+
+def down( parent ):
+
+    while 2 * parent <= size:
+
+          child = 2 * parent
+
+          if 2 * parent + 1 <= size and Heap[2 * parent + 1] < Heap[2 * parent]:
+
+              child += 1
+
+          if Heap[parent] >= Heap[child]:
+
+             Heap[parent], Heap[child] = Heap[child], Heap[parent]
+
+             parent = child
+          else:
+             break
+
+def insertHeap( elem ):
+
+    global size
+
+    size += 1
+
+    Heap[ size ] = elem
+
+    up( size )
+
+@app.route('/projects/heapsort/<int:n>')
+
+def heapsort(n):
+
+    global Heap, size
+
+    header = "<h1 style='background-color: yellow; font-size: 50px; text-align: center'>Heap Sort</h1><h2>Time and Space Complexity:</h2><ul><li>Worst case time: N LOG(N)</li><li>Average case time: N LOG(N)</li><li>Best case time: N LOG(N)</li></ul>"
+
+    size = 0
+
+    arr = [91,81,71,61,0,-5,4,3,21,1]
+
+    input = " ".join(str(i) for i in arr)
+
+    n = len(arr)
+
+    Heap = [ 0 ] * (n + 1)
+
+    for elem in arr:
+
+        insertHeap( elem )
+
+    out = []
+
+    for i in arr:
+
+        min = Heap[1]
+
+        out.append(min)
+
+        Heap[1] = Heap[size]
+
+        size -= 1
+
+        down(1)
+
+    return header + "<h1 > Input: " + input + "</h1 > " + "<br/ > " + "<h1 >Output: " + " ".join(str(i) for i in out) + "</h1 > "
