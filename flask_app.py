@@ -1,5 +1,5 @@
 
-# A very simple Flask App Chelner for $1M
+# A very simple Flask App
 
 from flask import Flask
 from flask import render_template
@@ -114,7 +114,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li>  <li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li>  </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li></ol></div>"
 
 @app.route('/about')
 
@@ -1948,3 +1948,130 @@ def heapsort(n):
         down(1)
 
     return header + "<h1 > Input: " + input + "</h1 > " + "<br/ > " + "<h1 >Output: " + " ".join(str(i) for i in out) + "</h1 > "
+
+#
+# Binary Search Tree - Data Structure
+#
+# Methods:
+# - insert
+# - search
+# - delete
+# - traversals (inorder, preorder, postorder)
+#
+# Time complexity Big O:
+#      worst case O(log N)
+#      average case O(log N)
+#      best case O(log N)
+#
+
+class Node:
+
+    def __init__(self, key):
+
+        self.left = None
+
+        self.right = None
+
+        self.data = key
+
+def insertBST(root, key):
+
+    if root is None:
+
+        root = Node(key)
+
+    elif root.data < key:
+
+        root.right = insertBST(root.right, key)
+
+    elif root.data > key:
+
+        root.left = insertBST(root.left, key)
+
+    return root
+
+def inorder(root):
+
+    if root is not None:
+        inorder(root.left)
+        out.append(root.data)
+        inorder(root.right)
+
+def search(root, key):
+
+    if root is None:
+        return False
+    elif root.data < key:
+        return search(root.right, key)
+    elif root.data > key:
+        return search(root.left, key)
+    else:
+        return True
+
+def mostlyLeftMin(root, key):
+    if root.left is not None:
+        root = root.left
+    return root
+
+def delete(root, key):
+
+    if root is None:
+        return root
+    elif root.data < key:
+        root.right = delete(root.right, key)
+    elif root.data > key:
+        root.left = delete(root.left, key)
+    else:
+        if root.left is None and root.right is None:
+            root = None
+        elif root.left is None:
+             temp = root.right
+             root = None
+             return temp
+        elif root.right is None:
+             temp = root.left
+             root = temp
+             return temp
+        elif root.left is not None and root.right is not None:
+            temp = mostlyLeftMin(root.right)
+            root.data = temp.data
+            root.right = delete(root.right, temp.data)
+    return root
+
+@app.route('/projects/bst/<int:n>')
+
+def bst( n ):
+
+    global out
+
+    header = "<h1 style='color: yellow; background: blue; font-size: 100px'> Binary Search Tree </h1>"
+
+    out = []
+
+    root = Node(8)
+
+    arr = [ 10, 4, 3, -3, 7, 5, 14 ]
+
+    for element in arr:
+
+        insertBST(root, element)
+
+    inorder(root)
+
+    key = 7
+
+    result = str(search(root, key))
+
+    header +=  "<div style='color: blue; font-size: 50px'>Inorder: " + " ".join(str(i) for i in out) + "<br> Search: %d " % key + result + "<br>"
+
+    out = []
+
+    delkey = 7
+
+    delete(root, delkey)
+
+    inorder(root)
+
+    header +="Deleted: %d" % delkey +"<br> Inorder: " + " ".join(str(i) for i in out) + "</div>"
+
+    return header
