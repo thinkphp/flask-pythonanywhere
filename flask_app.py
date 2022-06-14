@@ -5,6 +5,7 @@ from flask import Flask
 from flask import render_template
 from flask import redirect, url_for, request
 import math
+import random
 
 
 app = Flask(__name__)
@@ -114,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li></ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> </ol></div>"
 
 @app.route('/about')
 
@@ -2075,3 +2076,98 @@ def bst( n ):
     header +="Deleted: %d" % delkey +"<br> Inorder: " + " ".join(str(i) for i in out) + "</div>"
 
     return header
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+class SinglyLinkedList:
+
+    def __init__(self):
+        self.head = None
+
+    def add(self, value):
+        if self.head is None:
+            self.head = Node(value)
+        else:
+            c = Node(value)
+            c.next = self.head
+            self.head = c
+
+    def getFirst(self):
+
+        return self.head.data
+
+    def removeNode(self, key):
+
+        if self.head.data == key:
+            ptr = self.head
+            self.head = self.head.next
+            del ptr
+        else:
+            c = self.head
+            while c.next.data != key:
+                  c = c.next
+            ptr = c.next
+            c.next = ptr.next
+            del ptr
+
+    def display(self):
+        c = self.head
+        out = []
+        while c is not None:
+            out.append(c.data)
+            c = c.next
+        return out
+
+    def reverse(self):
+
+        out = []
+        next = None
+        prev = None
+        curr = self.head
+
+        while curr is not None:
+            next = curr.next
+            curr.next = prev
+            prev = curr
+            curr = next
+
+        self.head = prev
+
+        c = self.head
+
+        while c is not None:
+            out.append(c.data)
+            c = c.next
+
+        return out
+
+@app.route('/projects/linkedlist/<int:n>')
+
+def linkedlist(n):
+
+    header =  "<div style='font-size: 40px'><h1 style='color: yellow; background-color: blue; font-size: 50px'>Singly Linked List Data Structure</h1>"
+
+    obj = SinglyLinkedList()
+
+    for i in range(10):
+
+        value = random.randrange(100)
+
+        obj.add(value)
+
+    out = obj.display()
+
+    out2 = obj.reverse()
+
+    node = obj.getFirst()
+
+    delete = "<br/>Remove: " + str( node ) + "<br/>"
+
+    obj.removeNode(node)
+
+    out3 = obj.display()
+
+    return header + "<span>List: </span>" +" ".join(str(i) for i in out) + "<br/><span>Reverse</span> " + " ".join(str(i) for i in out2) + delete + " ".join(str(i) for i in out3) + '</div>'
