@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - Running on Complexity Time (O(n^2) and n log n)</li>  <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search</li> <li><a href='projects/hanoi/3'>Towers of Hanoi</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) time complexity</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) time complexity</li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li></ol></div>"
 
 @app.route('/about')
 
@@ -2427,3 +2427,282 @@ def longestConsecutiveSubsequence(n):
     """
     code += "</pre>"
     return "<h1 style='background:yellow; font-size: 100px'>"+input+"</h1>" + output + code
+
+@app.route('/projects/bubblesort/<int:n>')
+
+def bubblesort(n):
+
+    arr = [9,8,7,6,5,4,3,2,1,0]
+
+    size = len(arr)
+
+    finished = False
+
+    while finished is not True:
+        swapped = False
+        for i in range(0, size-1):
+            if arr[i] > arr[i+1]:
+                xor = arr[i]^arr[i+1]
+                arr[i] = xor^arr[i]
+                arr[i+1] = xor ^ arr[i]
+                swapped = True
+        if swapped is True:
+            size -= 1
+        else:
+            finished = True
+
+    out = " ".join(str(x) for x in arr)
+
+    code = "<pre style='font-size: 50px'>"
+    code += """
+
+    Bubble Sort Method
+
+    def func(n):
+
+        arr = [9,8,7,6,5,4,3,2,1,0]
+
+        size = len(arr)
+
+        finished = False
+
+        while finished is not True:
+
+          swapped = False
+
+          for i in range(0, size-1):
+
+            if arr[i] > arr[i+1]:
+
+                xor = arr[i]^arr[i+1]
+                arr[i] = xor^arr[i]
+                arr[i+1] = xor ^ arr[i]
+                swapped = True
+
+        if swapped is True:
+
+            size -= 1
+
+        else:
+
+            finished = True
+
+    @created by Adrian Statescu
+    """
+    code += "</pre>"
+    return "<h1 style='background:yellow; font-size: 140px'>" + out + "</h1>" + code
+
+@app.route('/projects/selectionbymin/<int:n>')
+
+def selectionbymin(n):
+
+    arr = [9,8,7,6,5,4,3,1,-1,0]
+
+    size = len(arr)
+
+    for i in range(0, size-1):
+        min = arr[i]
+        ind = i
+        for j in range(i+1, size):
+            if arr[j] < min:
+                ind =j
+                min = arr[j]
+        arr[ind] = arr[i]
+        arr[i] = min
+
+    out = " ".join(str(x) for x in arr)
+
+    code = "<pre style='font-size: 50px'>"
+    code += """
+    Selection By Min Method
+
+    arr = [9,8,7,6,5,4,3,1,-1,0]
+
+    for i in range(0, size-1):
+        min = arr[i]
+        ind = i
+        for j in range(i+1, size):
+            if arr[j] < min:
+                ind =j
+                min = arr[j]
+        arr[ind] = arr[i]
+        arr[i] = min
+
+
+    @created by Adrian Statescu
+    """
+    code += "</pre>"
+    return "<h1 style='background:yellow; font-size: 140px'>" + out + "</h1>" + code
+
+def _merge(lo, m, hi, arr):
+
+    i = lo
+    j = m + 1
+    aux = []
+    while i <= m and j <= hi:
+        if arr[i] < arr[j]:
+            aux.append(arr[i])
+            i+=1
+        else:
+            aux.append(arr[j])
+            j+=1
+    while i <= m:
+        aux.append(arr[i])
+        i+=1
+    while j <= hi:
+        aux.append(arr[j])
+        j+=1
+    k=0
+    for i in range(lo, hi+1):
+        arr[i] = aux[k]
+        k+=1
+
+def _mergesort(lo, hi, arr):
+
+    if lo < hi:
+        m = (lo + hi) >> 1
+        _mergesort(lo, m, arr)
+        _mergesort(m+1, hi, arr)
+        _merge(lo, m, hi, arr)
+
+@app.route('/projects/mergesort/<int:n>')
+
+def mergesort(n):
+
+    arr = [0,8,7,6,5,4,3,2,12]
+
+    _mergesort(0, len(arr)-1, arr)
+
+    out = " ".join(str(x) for x in arr)
+
+    code = "<pre style='font-size: 50px'>"
+    code += """
+    Merge Sort Method
+
+    def _merge(lo, m, hi, arr):
+
+        i = lo
+        j = m + 1
+        aux = []
+
+        while i <= m and j <= hi:
+
+          if arr[i] < arr[j]:
+
+            aux.append(arr[i])
+            i+=1
+
+          else:
+
+            aux.append(arr[j])
+            j+=1
+
+        while i <= m:
+
+          aux.append(arr[i])
+          i+=1
+
+        while j <= hi:
+
+          aux.append(arr[j])
+          j+=1
+
+       k=0
+       for i in range(lo, hi+1):
+          arr[i] = aux[k]
+          k+=1
+
+       def _mergesort(lo, hi, arr):
+
+        if lo < hi:
+           m = (lo + hi) >> 1
+           _mergesort(lo, m, arr)
+           _mergesort(m+1, hi, arr)
+           _merge(lo, m, hi, arr)
+
+    @created by Adrian Statescu
+    """
+    code += "</pre>"
+    return "<h1 style='background:yellow; font-size: 140px'>" + out + "</h1>" + code
+
+@app.route('/projects/knapsack/<int:n>')
+
+def knapsack(n):
+
+    capacity = 41
+
+    matrix = [(1, 12.34, 123.99),(2, 23.45, 600.54),(3, 12.78, 90.67), (4, 9.34, 45.32)]
+
+    matrix = sorted(matrix, key=lambda object: object[1]/object[2])
+
+    i = 0
+
+    while capacity > 0:
+
+        if capacity > matrix[i][1]:
+            capacity -= matrix[i][1]
+            i+=1
+        else:
+            capacity = -capacity
+
+    output = ""
+
+    for k in range(0, i):
+
+        output += str(matrix[k][0]) + " "+ str(matrix[k][1]) + " " + str(matrix[k][2]) + " complete <br/>"
+
+    if capacity < 0:
+        output += str(matrix[i][0]) + " "+ str(matrix[i][1]) + " " + str(matrix[i][2]) + " "+ str(capacity) + "fractional <br/>"
+
+
+    code = "<pre style='font-size: 50px'>"
+    code += """
+    Knapsack Problem
+
+    Given a set of items, each with a weight and a value,
+    determine a subset of items to include in a collection so that the total weight
+    is less than or equal to a given limit and the  total value is as large as possible.
+
+    class Object:
+       def __init__(self, w, v, index):
+          self.weight = float(w)
+          self.value = float(v)
+          self.index = int(index)
+       def __repr__(self):
+          return repr((self.index, self.weight, self.value))
+       arr = []
+
+       filepath = 'knapsack.in'
+       with open(filepath) as fp:
+            lines = fp.readlines()
+            content = [x.strip() for x in lines]
+            capacity = float(content[0])
+            content.pop(0)
+        i = 0
+        for item in content:
+        ob = item.split(" ")
+        arr.append(Object(ob[0], ob[1], i))
+        i+=1
+        arr = sorted(arr, key = lambda x: x.weight/x.value)
+
+        i = 0
+        while capacity > 0:
+          if capacity > arr[i].weight:
+             capacity -= arr[i].weight
+             i+=1
+          else:
+          capacity = -capacity
+
+        for j in range(0, i):
+
+            print("Object:%d. weight=%f value=%f completed"%(arr[j].index, arr[j].weight, arr[j].value))
+
+        if capacity < 0:
+
+            print("Object:%d. weight=%f value=%f %f fractional"%(arr[i].index, arr[i].weight, arr[i].value, capacity))
+
+    @created by Adrian Statescu
+    """
+    code += "</pre>"
+
+    return "<div style='background-color: yellow;font-size:50px'>" + output + "</div>" + code
