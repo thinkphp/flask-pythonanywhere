@@ -2633,6 +2633,13 @@ def knapsack(n):
 
     matrix = [(1, 12.34, 123.99),(2, 23.45, 600.54),(3, 12.78, 90.67), (4, 9.34, 45.32)]
 
+    input = "Capacity = <mark>%d </mark><br/>" % capacity
+
+    for k in range(0, len(matrix)):
+
+       input += str(matrix[k][0]) + " "+ str(matrix[k][1]) + " " + str(matrix[k][2]) + "<br/>"
+
+
     matrix = sorted(matrix, key=lambda object: object[1]/object[2])
 
     i = 0
@@ -2705,4 +2712,4 @@ def knapsack(n):
     """
     code += "</pre>"
 
-    return "<div style='background-color: yellow;font-size:50px'>" + output + "</div>" + code
+    return "<div style='background-color: lightgreen;font-size:50px'>" + input + "</div><div style='background-color: yellow;font-size:50px'>" + output + "</div>" + code
