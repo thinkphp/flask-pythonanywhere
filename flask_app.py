@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) time complexity</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) time complexity</li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li></ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) time complexity</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) time complexity</li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> </ol></div>"
 
 @app.route('/about')
 
@@ -2713,3 +2713,274 @@ def knapsack(n):
     code += "</pre>"
 
     return "<div style='background-color: lightgreen;font-size:50px'>" + input + "</div><div style='background-color: yellow;font-size:50px'>" + output + "</div>" + code
+
+
+def plus(arr, n):
+
+    return list(map(lambda x: x + 1, arr))
+
+
+@app.route('/projects/colormap/<int:n>')
+
+def mapColor(n):
+
+    # we have 7 countries to color
+    n = 7
+    matrix = [[0,1,1,1,0,0,1],
+              [1,0,1,1,0,0,0],
+              [1,1,0,1,1,0,1],
+              [1,1,1,0,1,0,1],
+              [0,0,1,1,0,1,1],
+              [0,0,0,0,1,0,1],
+              [1,0,1,1,1,1,0]]
+
+    Input = "<div style='background-color: lightgreen; font-size: 60px'>"
+
+    for line in matrix:
+
+        Input += " ".join(str(x) for x in line)
+
+        Input += "<br/>"
+
+    Input += "</div>"
+
+
+    mapColors = []
+
+    mapColors = [0] * (n)
+
+    color = -1
+
+    ok = True
+
+    mapColors[0] = 0
+
+    for i in range(1, n):
+
+        ok = False
+
+        color = -1
+
+        while ok is not True:
+
+              color += 1
+
+              ok = True
+
+              for j in range(0, i):
+
+                  if 1 == matrix[j][i] and mapColors[j] == color:
+
+                      ok = False
+        mapColors[i] = color
+
+    mapColors = plus(mapColors, 1)
+
+    output = ""
+
+    output += " ".join(str(element) for element in mapColors)
+
+    code = "<pre style='font-size: 45px; padding: 10px; margin: 1px'>"
+    code += """
+
+Graph Coloring Problem based on Greedy Design
+
+def plus(arr, n):
+
+    return list(map(lambda x: x + 1, arr))
+
+def func():
+    # we have 7 countries to color
+    n = 7
+    matrix = [[0,1,1,1,0,0,1],
+              [1,0,1,1,0,0,0],
+              [1,1,0,1,1,0,1],
+              [1,1,1,0,1,0,1],
+              [0,0,1,1,0,1,1],
+              [0,0,0,0,1,0,1],
+              [1,0,1,1,1,1,0]]
+
+    mapColors = []
+
+    mapColors = [0] * (n)
+
+    color = -1
+
+    ok = True
+
+    mapColors[0] = 0
+
+    for i in range(1, n):
+
+        ok = False
+
+        color = -1
+
+        while ok is not True:
+
+              color += 1
+
+              ok = True
+
+              for j in range(0, i):
+
+                  if 1 == matrix[j][i] and mapColors[j] == color:
+
+                      ok = False
+        mapColors[i] = color
+
+    mapColors = plus(mapColors, 1)
+
+    print(mapColors)
+
+func()
+
+
+    """
+    code += "<pre>"
+
+    return Input + "<div style='background-color: lightblue; font-size: 60px'>" + output + "</div>" + code
+
+
+
+def coloring(i, j, color):
+
+    global theMatrix
+
+    if i >= 0 and j >= 0 and i < lines and j < cols and 1 == theMatrix[i][j]:
+
+
+        theMatrix[i][j] = color
+
+        coloring(i, j + 1, color)
+        coloring(i, j - 1, color)
+        coloring(i + 1, j, color)
+        coloring(i - 1, j, color)
+
+@app.route('/projects/picturecolor/<int:n>')
+
+def photoColoring(n):
+
+    global theMatrix, lines, cols
+
+    theMatrix =[[4,6],[1,1,0,1,1,0],[1,1,0,0,0,1],[0,0,0,1,1,1],[1,1,0,0,1,0]]
+
+    lines= int(theMatrix[0][0])
+
+    cols = int(theMatrix[0][1])
+
+    theMatrix.pop(0)
+
+    Input = "<div style='background-color: lightgreen; font-size: 60px'>"
+
+    for line in theMatrix:
+
+        Input += " ".join(str(x) for x in line)
+
+        Input += "<br/>"
+
+    Input += "</div>"
+
+    color = 2
+
+    for i in range(0, lines):
+        for j in range(0, cols):
+            if theMatrix[i][j] == 1:
+                coloring(i, j, color)
+                color+= 1
+
+    output = "<div style='background-color: yellow; font-size: 60px'>"
+
+    for line in theMatrix:
+
+        output += " ".join(str(x) for x in line)
+
+        output += "<br/>"
+
+    output += "</div>"
+
+    code = "<pre style='font-size: 40px'>"
+    code += """
+    Photo Coloring Problem based on Backtracking
+
+    def coloring(i, j, color):
+
+        global matrix
+
+        if i >= 0 and j >= 0 and i < n and j < m and 1 == matrix[i][j]:
+
+        matrix[i][j] = color
+
+        coloring(i, j + 1, color)
+        coloring(i, j - 1, color)
+        coloring(i + 1, j, color)
+        coloring(i - 1, j, color)
+
+    def func():
+
+       global matrix, n, m
+
+       filepath = "colorphoto.in"
+
+       with open(filepath) as fp:
+
+            lines = fp.readlines()
+
+            content = [x.strip() for x in lines]
+
+            lineCol = content[0].split(" ")
+
+            n = int(lineCol[0])
+
+            m = int(lineCol[1])
+
+            content.pop(0)
+
+            matrix = []
+
+        for element in content:
+
+           line = element.split(" ")
+
+           line = [int(x) for x in line]
+
+            matrix.append(line)
+
+        for i in range(0, n):
+
+            for j in range(0, m):
+
+                print(matrix[i][j], end = " ")
+
+            print(end = "")
+
+        global color
+
+        color = 2
+
+        for i in range(0, n):
+
+           for j in range(0, m):
+
+           if matrix[i][j] == 1:
+
+              coloring(i, j, color)
+
+              color+=1
+
+        print("")
+
+        for i in range(0, n):
+
+            for j in range(0, m):
+
+            print(matrix[i][j], end = " ")
+
+        print(end = "")
+
+        func()
+
+    @Created by Adrian Statescu
+    """
+    code += "</pre>"
+    return Input + output + code
