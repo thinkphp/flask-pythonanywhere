@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li> <li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) time complexity</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) time complexity</li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> </ol></div>"
 
 @app.route('/about')
 
@@ -2984,3 +2984,137 @@ def photoColoring(n):
     """
     code += "</pre>"
     return Input + output + code
+
+def module(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+def computeArea(A,B,C):
+    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = module(area)/2
+    return area
+
+@app.route('/projects/areaoftriangle/<int:n>')
+
+def areaoftriangle(n):
+
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+
+    output = "<div style='background-color: yellow; font-size: 60px'>Area of Triangle formed by points A, B and C = " + str(area) + "</div>"
+
+    code = "<pre style='font-size: 41px'>"
+    code += """
+    Area of a Triangle
+
+    As per area of triangle method, if three points
+    P(x1,y1), P(x2,y2), R(x3, y3) are collinear,
+    the area of the triangle formed by all three points
+    P(x1,y1) Q(x2,y2) R(x3,y3) will be zero
+
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+
+
+def module(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+def computeArea(A,B,C):
+    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = module(area)/2
+    return area
+    """
+    code += "</pre"
+
+    return output + code
+
+
+@app.route('/projects/collinearity/<int:n>')
+
+def collinearity(n):
+
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+
+    if area == 0.0:
+       output = "<div style='background-color: yellow; font-size: 60px'>The points A,B,C are collinears</div>"
+    else:
+       output = "<div style='background-color: yellow; font-size: 60px'>The points A,B,Care not collinears</div>"
+
+    if area2 == 0.0:
+       output2 = "<div style='background-color: yellow; font-size: 60px'>The points X,Y,Z are collinears</div>"
+    else:
+       output2 = "<div style='background-color: yellow; font-size: 60px'>The points X,Y,Z are not collinears</div>"
+
+    code = "<pre style='font-size: 41px'>"
+    code += """
+    Area of a Triangle
+
+    As per area of triangle method, if three points
+    P(x1,y1), P(x2,y2), R(x3, y3) are collinear,
+    the area of the triangle formed by all three points
+    P(x1,y1) Q(x2,y2) R(x3,y3) will be zero
+
+    A = Point(2,2)
+    B = Point(2,8)
+    C = Point(13,2)
+    X = Point(-1,-1)
+    Y = Point(1,1)
+    Z = Point(3,3)
+    area = computeArea(A,B,C)
+    area2 = computeArea(X,Y,Z)
+
+
+def module(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+class Point():
+    def __init__(self,x,y):
+        self.x = x
+        self.y = y
+
+def computeArea(A,B,C):
+    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = module(area)/2
+    return area
+    """
+    code += "</pre"
+
+    return output + output2 + code
+
