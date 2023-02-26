@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line Through 2 Points</li> </ol></div>"
 
 @app.route('/about')
 
@@ -1653,7 +1653,25 @@ def insertsorting(  n ):
 
     output = ' '.join(str(i) for i in arr)
 
-    return '<h2>Insert Sort</h2><h1 style="background-color: lightgreen; font-size: 40px">' + input + '</h1>' + '<br/>' + '<h1 style="background-color: yellow; font-size: 40px">'  + output + '</h1>'
+    code = "<pre style='font-size: 50px'>"
+
+    code += """
+
+def insertionsort( arr, n ):
+
+    for i in range(1, n):
+        aux = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] >= aux:
+            arr[j+1] = arr[j]
+            j -= 1
+        arr[j+1] = aux
+
+    """
+    code += "</pre>"
+
+    return '<h2>Insert Sort</h2><h1 style="background-color: lightgreen; font-size: 40px">' + input + '</h1>' + '<br/>' + '<h1 style="background-color: yellow; font-size: 40px">'  + output + '</h1>' + code
+
 
 @app.route('/projects/depressionForm/<int:n>')
 
@@ -3118,3 +3136,67 @@ def computeArea(A,B,C):
 
     return output + output2 + code
 
+
+def computeGradient(A, B):
+
+    return (B.y - A.y) / (B.x - A.x)
+
+@app.route('/projects/equationline/<int(signed=True):a>/<int(signed=True):b>/<int(signed=True):c>/<int(signed=True):d>')
+def equationline(a,b,c,d):
+
+    A = Point(a,b)
+    B = Point(c,d)
+
+    myPoints = "<div style='font-size:50px; background-color: yellow'>A(%d,%d) and B(%d,%d)</div>"%(a,b,c,d)
+    slope = computeGradient(A,B)
+
+    # y - y1 = m (x - x1)
+    eq = myPoints + "<div style='background-color: lightblue; font-size: 70px;padding: 10px'>y - y1 = m (x - x1)</div>"
+    theEq = "y - %f = %f * (x - %f)"% (A.y, slope, A.x)
+
+    # y = mx - mx1 + y1
+    # y = m x + y1 - m x1
+    z = A.y - slope * A.x
+
+    theEqSimplify = "y = %f x + %f" % (slope,z)
+    code = "<pre style='font-size: 45px'>"
+    code += """
+#
+# General Equation Line: ax + by + c = 0
+# y - y1 = m (x - x1) with slope
+# y = m x + c
+# a = y1-y2
+# b = x2 - x1
+# c = x2y1 - x1y2
+#
+class Point():
+    def __init__(self, x, y, name):
+        self.name = name
+        self.x = x
+        self.y = y
+    def __repr__(self):
+        return self.name + '(' + str(self.x) + "," + str(self.y) + ')'
+
+def computeSlope(x1, y1, x2, y2):
+    return (y2-y1)/(x2-x1)
+
+def func():
+
+    A = Point(0,2,"A")
+    B = Point(-1,4,"B")
+
+    slope = computeSlope(A.x, A.y, B.x, B.y)
+
+    print(slope)
+    print(A)
+    print(B)
+
+    c = - slope * A.x + A.y
+
+    print("y = %.2f * x + %.2f"%(slope,c))
+
+    print("y - %.2f = %.2f x - %.2f %.2f "% (B.y, slope, slope, A.x))
+func()
+    """
+    code += "</pre>"
+    return eq + "<div style='background-color: lightgreen; font-size: 90px'>" + theEq + "</div><div style='background-color: lightblue;font-size: 100px'>" + theEqSimplify + "</div>" + code
