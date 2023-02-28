@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line Through 2 Points</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line from two points</li>  <li><a href='projects/distaline/-5/7/1/3/3/3'>dist(Point, Line)</li>  <li><a href='projects/parallel/3'>Parallel Lines</li> <li><a href='projects/salesman/3'>Salesman Traveling Problem | Graph Hamilton</li>  </ol></div>"
 
 @app.route('/about')
 
@@ -3117,18 +3117,19 @@ def collinearity(n):
 
 
 def module(n):
+
     if n < 0:
         return -n
     else:
         return n
 
 class Point():
-    def __init__(self,x,y):
+    def __init__(self, x, y):
         self.x = x
         self.y = y
 
 def computeArea(A,B,C):
-    area = A.x*(B.y-C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
+    area = A.x*(B.y - C.y) + B.x *(C.y - A.y) + C.x*(A.y - B.y)
     area = module(area)/2
     return area
     """
@@ -3142,61 +3143,346 @@ def computeGradient(A, B):
     return (B.y - A.y) / (B.x - A.x)
 
 @app.route('/projects/equationline/<int(signed=True):a>/<int(signed=True):b>/<int(signed=True):c>/<int(signed=True):d>')
+
 def equationline(a,b,c,d):
 
     A = Point(a,b)
     B = Point(c,d)
 
-    myPoints = "<div style='font-size:50px; background-color: yellow'>A(%d,%d) and B(%d,%d)</div>"%(a,b,c,d)
+    myPoints = "<div style='font-size:50px; background-color: yellow'>A(%d,%d), B(%d,%d)</div>"%(a,b,c,d)
+
+    # compute Gradient or Slope
     slope = computeGradient(A,B)
 
-    # y - y1 = m (x - x1)
-    eq = myPoints + "<div style='background-color: lightblue; font-size: 70px;padding: 10px'>y - y1 = m (x - x1)</div>"
-    theEq = "y - %f = %f * (x - %f)"% (A.y, slope, A.x)
+    # compute the coefficient c
+    c = A.y - slope * A.x
 
-    # y = mx - mx1 + y1
-    # y = m x + y1 - m x1
-    z = A.y - slope * A.x
+    theEqGradient = "First method ( y = mx + C ) : y = %f x + %f" % ( slope, c )
 
-    theEqSimplify = "y = %f x + %f" % (slope,z)
-    code = "<pre style='font-size: 45px'>"
+    eq = myPoints + "<div style='background-color: lightblue; font-size: 50px;padding: 10px'>Second Method: y - y1 = m (x - x1) and Slope = %f</div>"% slope
+
+    theEq = "y - %.2f = %.5f * (x - %.5f)" % ( A.y, slope, A.x )
+
+    z = - slope * A.x + A.y
+
+
+    a = A.y - B.y
+    b = B.x - A.x
+    c = (A.x * B.y) - (B.x * A.y)
+
+    theCanonicalForm = "Third method: ax + by + c = 0 => %.2fx + %.2f y + %.2f = 0"%(a,b,c)
+
+    theEqSimplify = "y = %.5f x + %.5f" % (slope, z)
+
+    code = "<pre style='font-size: 40px'>"
+
     code += """
-#
+
 # General Equation Line: ax + by + c = 0
-# y - y1 = m (x - x1) with slope
-# y = m x + c
-# a = y1-y2
+#
+# Compute slope = (y2-y1)/(x2-x1)
+#
+# First method:  y - y1 = m (x - x1) with slope
+#
+# Second method: y = m x + c and replace first Point. c = mx1-y1
+#
+# Third method compute coeffs:
+# a = y1 - y2
 # b = x2 - x1
 # c = x2y1 - x1y2
+# ax + by + c = 0
 #
-class Point():
-    def __init__(self, x, y, name):
-        self.name = name
-        self.x = x
-        self.y = y
-    def __repr__(self):
-        return self.name + '(' + str(self.x) + "," + str(self.y) + ')'
+    """
 
-def computeSlope(x1, y1, x2, y2):
-    return (y2-y1)/(x2-x1)
+    code += "</pre>"
 
-def func():
+    return "<div style='background-color: lightblue;font-size: 50px'>"+theEqGradient+"</div>" + eq + "<div style='background-color: lightgreen; font-size: 70px'>" + theEq + "</div><div style='background-color: lightblue;font-size: 50px'>" + theEqSimplify + "</div><div style='background-color: lightgray;font-size: 50px'>" + theCanonicalForm + "</div>" + code
 
-    A = Point(0,2,"A")
-    B = Point(-1,4,"B")
+@app.route('/projects/distaline/<int(signed=True):a>/<int(signed=True):b>/<int(signed=True):c>/<int(signed=True):d>/<int(signed=True):e>/<int(signed=True):f>')
 
-    slope = computeSlope(A.x, A.y, B.x, B.y)
+def distaline(a, b, c, d, e ,f):
 
-    print(slope)
-    print(A)
-    print(B)
+    return "d(P, Line)"
 
-    c = - slope * A.x + A.y
 
-    print("y = %.2f * x + %.2f"%(slope,c))
+@app.route('/projects/parallel/<int:n>')
 
-    print("y - %.2f = %.2f x - %.2f %.2f "% (B.y, slope, slope, A.x))
-func()
+def parellel(n):
+
+    point1 = Point(5,7)
+    point2 = Point(1,3)
+    point3 = Point(7,1)
+    point4 = Point(9,3)
+
+    m1 = (point2.y - point1.y) / (point2.x - point1.x)
+    m2 = (point4.y - point3.y) / (point4.x - point3.x)
+
+    if m1 == m2:
+
+        output =  "The lines are Parallels."
+
+    else:
+
+        output = "The lines are not Parallels."
+
+    code = "<pre style='font-size: 45px'>"
+
+    code += """
+
+    point1 = Point(5,7)
+    point2 = Point(1,3)
+    point3 = Point(7,1)
+    point4 = Point(9,3)
+
+    # check to see if they have the same slopes or not.
+    m1 = (point2.y - point1.y) / (point2.x - point1.x)
+    m2 = (point4.y - point3.y) / (point4.x - point3.x)
+
+    if m1 == m2:
+        output =  "The lines are Parallels."
+    else:
+        output "The lines are not Parallels."
+
+    """
+
+    code += "<pre>"
+
+    return "<div style='background-color: lightgreen; font-size: 45px'>" + output  + "</div>" + code
+
+def initStack():
+
+    myStack[ Stacklevel ] = 0
+
+def succ2():
+
+    if myStack[ Stacklevel ] < nodes:
+
+        myStack[ Stacklevel ] += 1
+
+        return True
+
+    return False
+
+def valid2():
+
+    if matrix_adj[ myStack[ Stacklevel - 1 ] ][ myStack[ Stacklevel ] ] == 0:
+
+        return False
+
+    for i in range(Stacklevel):
+
+        if myStack[ i ] == myStack[ Stacklevel ]:
+
+            return False
+
+def sol2():
+
+    return Stacklevel == nodes and matrix_adj[ startNode ][ myStack[ Stacklevel ] ] == 1
+
+def printf2():
+
+    for i in range(0, nodes + 1):
+
+        matrix_sol[ nextSolution ][ i ] = myStack[ i ]
+
+def backtracking():
+
+    global nextSolution, Stacklevel
+
+    nextSolution = 0
+
+    myStack[ 1 ] = startNode
+
+    Stacklevel = 2
+
+    initStack()
+
+    while Stacklevel > 0:
+
+            h = True
+
+            v = False
+
+            while h is True and v is False:
+
+              h = succ2()
+
+              if h is True:
+
+                  v = valid2()
+
+            if h is True:
+
+              if sol2() is True:
+
+                 printf2()
+
+                 nextSolution+=1
+
+              else:
+
+                  Stacklevel += 1
+
+                  initStack()
+            else:
+                  Stacklevel -= 1
+
+@app.route('/projects/salesman/<int:n>')
+
+def salesmantravelling(n):
+
+    global myStack, nds, nodes, matrix_adj, startNode, matrix_sol
+
+    nodes = 6
+
+    edges = 10
+
+    data = [ [ 1,2 ], [ 1, 6 ], [ 2, 3 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ], [ 3, 6 ], [ 4, 5 ], [ 5, 6 ], [ 6, 1 ] ]
+
+    matrix_adj = [ [ 0 for i in range( nodes + 1 ) ] for j in range( nodes + 1 ) ]
+
+    matrix_sol = [ [ 0 for i in range( nodes + 1 ) ] for j in range( nodes + 1 ) ]
+
+    myStack = [ 0 ] * ( nodes + 10 )
+
+    for edges in data:
+
+        x, y = edges[ 0 ], edges[ 1 ]
+
+        matrix_adj[ x ][ y ] = 1
+
+        matrix_adj[ y ][ x ] = 1
+
+    startNode = 3
+
+    backtracking()
+
+    out = " ".join(str(i) for i in matrix_sol[ 1 ])
+
+    code = "<pre style='font-size: 30px'>"
+
+    code +="""
+
+    Salesman Travelling Problem
+
+def initStack():
+
+    myStack[ Stacklevel ] = 0
+
+def succ2():
+
+    if myStack[ Stacklevel ] < nodes:
+
+        myStack[ Stacklevel ] += 1
+
+        return True
+
+    return False
+
+def valid2():
+
+    if matrix_adj[ myStack[ Stacklevel - 1 ] ][ myStack[ Stacklevel ] ] == 0:
+
+        return False
+
+    for i in range(Stacklevel):
+
+        if myStack[ i ] == myStack[ Stacklevel ]:
+
+            return False
+
+def sol2():
+
+    return Stacklevel == nodes and matrix_adj[ startNode ][ myStack[ Stacklevel ] ] == 1
+
+def printf2():
+
+    for i in range(0, nodes + 1):
+
+        #print(myStack[i], end = " ")
+
+        matrix_sol[ nextSolution ][ i ] = myStack[ i ]
+
+
+def backtracking():
+
+    global nextSolution, Stacklevel
+
+    nextSolution = 0
+
+    myStack[ 1 ] = startNode
+
+    Stacklevel = 2
+
+    initStack()
+
+    while Stacklevel > 0:
+
+            h = True
+
+            v = False
+
+            while h is True and v is False:
+
+              h = succ2()
+
+              if h is True:
+
+                  v = valid2()
+
+            if h is True:
+
+              if sol2() is True:
+
+                 printf2()
+
+                 nextSolution+=1
+
+              else:
+
+                  Stacklevel += 1
+
+                  initStack()
+            else:
+                  Stacklevel -= 1
+
+def salesmantravelling():
+
+    global myStack, nds, nodes, matrix_adj, startNode, matrix_sol
+
+    nodes = 6
+
+    edges = 10
+
+    data = [ [ 1,2 ], [ 1, 6 ], [ 2, 3 ], [ 2, 5 ], [ 3, 4 ], [ 3, 5 ], [ 3, 6 ], [ 4, 5 ], [ 5, 6 ], [ 6, 1 ] ]
+
+    matrix_adj = [ [ 0 for i in range( nodes + 1 ) ] for j in range( nodes + 1 ) ]
+
+    matrix_sol = [ [ 0 for i in range( nodes + 1 ) ] for j in range( nodes + 1 ) ]
+
+    myStack = [ 0 ] * ( nodes + 10 )
+
+    for edges in data:
+
+        x, y = edges[ 0 ], edges[ 1 ]
+
+        matrix_adj[ x ][ y ] = 1
+
+        matrix_adj[ y ][ x ] = 1
+
+    startNode = 3
+
+    backtracking()
+
+    print(" ".join(str(i) for i in matrix_sol[ 1 ]))
+
+salesmantravelling()
+
+
     """
     code += "</pre>"
-    return eq + "<div style='background-color: lightgreen; font-size: 90px'>" + theEq + "</div><div style='background-color: lightblue;font-size: 100px'>" + theEqSimplify + "</div>" + code
+
+    return "<div style='background-color: lightgreen; font-size: 45px'>" + out + "</div>" + code
+
+
+
