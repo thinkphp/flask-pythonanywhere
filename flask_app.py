@@ -8,7 +8,7 @@ import math
 import random
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 @app.route('/')
 
@@ -16,7 +16,7 @@ def index():
 
     out = "<h1 style='font-size: 70px;'>Web Development - <mark>Flask</mark></h1>"
 
-    out += "<div style='color: lightgreen;font-size: 40px'><a href='/home'>Home</a> | <a href='/about'>About</a> | <a href='/projects'>Projects</a> | <a href='/github'>GitHub</a> | <a href='/contact'>Contact</a> </div>"
+    out += "<div style='color: lightgreen;font-size: 40px'><a href='/home'>Home</a> | <a href='/about'>About</a> | <a href='/projects'>Basic Algorithms</a> | <a href='/github'>GitHub</a> | <a href='/contact'>Contact</a> </div>"
 
     out += "<h3>from flask import Flask</h3>"
 
@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Algorithms Basics</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line from two points</li>  <li><a href='projects/distaline/-5/7/1/3/3/3'>dist(Point, Line)</li>  <li><a href='projects/parallel/3'>Parallel Lines</li> <li><a href='projects/salesman/3'>Salesman Traveling Problem | Graph Hamilton</li>  </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Basic Algorithms</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line from two points</li>  <li><a href='projects/distaline/-5/7/1/3/3/3'>dist(Point, Line)</li>  <li><a href='projects/parallel/3'>Parallel Lines</li> <li><a href='projects/salesman/3'>Salesman Traveling Problem | Graph Hamilton</li>  <li><a href='projects/mapcolor/3'>Map Color Problem (Backtracking)</li> </ol></div>"
 
 @app.route('/about')
 
@@ -3359,11 +3359,9 @@ def salesmantravelling(n):
 
     out = " ".join(str(i) for i in matrix_sol[ 1 ])
 
-    code = "<pre style='font-size: 30px'>"
+    code = "</h1><pre style='font-size: 30px'>"
 
     code +="""
-
-    Salesman Travelling Problem
 
 def initStack():
 
@@ -3482,7 +3480,160 @@ salesmantravelling()
     """
     code += "</pre>"
 
-    return "<div style='background-color: lightgreen; font-size: 45px'>" + out + "</div>" + code
+    return "<div style='background-color: lightgreen; font-size: 45px'>" + out + "</div><h1><center>Salesman Travelling Problem<center></h1><img src='/static/salesman.png' />" + code
 
+@app.route('/projects/mapcolor/<int:n>')
 
+def mapcolor(n):
 
+    class MapColoring:
+
+          def __init__(self, nodes, edges, data):
+              self.nodes = nodes
+              self.data = data
+              self.matrix = [[0 for i in range(nodes+1)] for j in range(nodes+1)]
+              self.matrix_sol = []
+              self.stack = [0] * (nodes+10)
+
+              for edges in data:
+                  x, y = edges[0], edges[1]
+                  self.matrix[x][y] = 1
+                  self.matrix[y][x] = 1
+
+          def displayMatrixAdjcent(self):
+
+              for i in range(1, self.nodes+1):
+                  for j in range(1, self.nodes+1):
+                      print(self.matrix[i][j], end = " ")
+                  print("")
+
+          def init(self):
+              self.stack[self.level] = 0
+
+          def succ(self):
+              if self.stack[self.level] < 4:
+                 self.stack[self.level] += 1
+                 return True
+              return False
+
+          def valid(self):
+              for i in range(0, self.level):
+                  if self.matrix[ self.level ][ i ] == 1 and self.stack[self.level] == self.stack[i]:
+                      return False
+              return True
+
+          def sol(self):
+              return self.level == self.nodes
+
+          def printf(self):
+              aux = []
+              for i in range(1,self.nodes+1):
+                  aux.append(self.stack[i])
+              self.matrix_sol.append(aux)
+
+          def searchSolutions(self):
+              self.stack[1] = 1
+              self.level = 2
+
+              while self.level > 0:
+                  h = True
+                  v = False
+                  while h is True and v is False:
+                        h = self.succ()
+                        if h is True:
+                            v = self.valid()
+                  if h is True:
+                      if self.sol() is True:
+                          self.printf()
+                      else:
+                          self.level +=1
+                          self.init()
+                  else:
+                      self.level-=1
+
+              return self.matrix_sol
+
+    nodes = 5
+    edges = 8
+    data = [ [1,2],[1,4],[2,3],[2,5],[3,1],[3,5],[4,5] ]
+    ob = MapColoring(nodes, edges, data)
+    solution = ob.searchSolutions()
+    code = "<pre style='font-size:30px'>"
+    code += """
+
+    class MapColoring:
+
+          def __init__(self, nodes, edges, data):
+              self.nodes = nodes
+              self.data = data
+              self.matrix = [[0 for i in range(nodes+1)] for j in range(nodes+1)]
+              self.matrix_sol = []
+              self.stack = [0] * (nodes+10)
+
+              for edges in data:
+                  x, y = edges[0], edges[1]
+                  self.matrix[x][y] = 1
+                  self.matrix[y][x] = 1
+
+          def displayMatrixAdjcent(self):
+
+              for i in range(1, self.nodes+1):
+                  for j in range(1, self.nodes+1):
+                      print(self.matrix[i][j], end = " ")
+                  print("")
+
+          def init(self):
+              self.stack[self.level] = 0
+
+          def succ(self):
+              if self.stack[self.level] < 4:
+                 self.stack[self.level] += 1
+                 return True
+              return False
+
+          def valid(self):
+              for i in range(0, self.level):
+                  if self.matrix[ self.level ][ i ] == 1 and self.stack[self.level] == self.stack[i]:
+                      return False
+              return True
+
+          def sol(self):
+              return self.level == self.nodes
+
+          def printf(self):
+              aux = []
+              for i in range(1,self.nodes+1):
+                  aux.append(self.stack[i])
+              self.matrix_sol.append(aux)
+
+          def searchSolutions(self):
+              self.stack[1] = 1
+              self.level = 2
+
+              while self.level > 0:
+                  h = True
+                  v = False
+                  while h is True and v is False:
+                        h = self.succ()
+                        if h is True:
+                            v = self.valid()
+                  if h is True:
+                      if self.sol() is True:
+                          self.printf()
+                      else:
+                          self.level +=1
+                          self.init()
+                  else:
+                      self.level-=1
+
+              return self.matrix_sol
+
+    nodes = 5
+    edges = 8
+    data = [ [1,2],[1,4],[2,3],[2,5],[3,1],[3,5],[4,5] ]
+    ob = MapColoring(nodes, edges, data)
+    solution = ob.searchSolutions()
+    print( " ".join(str(i) for i in solution[0]) )
+    """
+    code += "</pre>"
+    return "<div style='background-color:yellow;font-size: 55px'><h1>Four Map Colouring Problem</h1>" + " ".join(str(i) for i in solution[1]) +"<br/>" +" ".join(str(i) for i in solution[0]) +  "</div>" +  code
