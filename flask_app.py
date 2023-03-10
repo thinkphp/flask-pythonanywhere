@@ -115,7 +115,7 @@ def fib(num):
 
 def projects():
 
-    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Basic Algorithms</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partitions</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line from two points</li>  <li><a href='projects/distaline/-5/7/1/3/3/3'>dist(Point, Line)</li>  <li><a href='projects/parallel/3'>Parallel Lines</li> <li><a href='projects/salesman/3'>Salesman Traveling Problem | Graph Hamilton</li>  <li><a href='projects/mapcolor/3'>Map Color Problem (Backtracking)</li> </ol></div>"
+    return "<div style='font-size: 50px; padding: 20px; margin-left: 20px'><h1 style='background-color: yellow'>Basic Algorithms</h1><ol><li><a href='projects/insertsort/1234321'><mark>Insertion Sort</mark></li> <li><a href='projects/shellsort/38765213'><mark>ShellSort</mark></li> <li><a href='projects/bubblesort/100'><mark>Bubblesort</mark></a></li> <li><a href='projects/selectionbymin/100'><mark>Selectionbymin</mark></a></li>  <li><a href='projects/mergesort/100'><mark>Mergesort</mark></a></li> <li><a href='projects/golden/100'>Golden Ratio</a></li> <li><a href='projects/fib/1000'>Fibonacci</a></li><li><a href='projects/gcd/10/3'>Greater Common Divisor</a></li><li> <a href='projects/fta/10'>Fundamental Theorem of Arithmetic</a></li><li><a href='projects/lcm/88/12'>Lower Common Multiple</a></li> <li><a href='/projects/bisect/64'>Bisection Method</a></li><li><a href='projects/eratosthenes/1000'>Sieve of Eratosthenes</li> <li><a href='projects/permutation/3'>Permutation</li> <li><a href='projects/partition/4'>Partition Set</li> <li><a href='projects/subsets/3'>Subsets</li> <li><a href='projects/bin/8'>toBin</li> <li><a href='projects/dec/1000'>toDec</li> <li><a href='projects/combinations/4/2'>Combinations</li> <li><a href='projects/arrangements/4/2'>Arrangements</li> <li><a href='projects/partitionNumber/4'>Partitions Number</li>  <li><a href='projects/cartesian/2/3/3'>Cartesian Product A x B x C</li> <li><a href='projects/cartesian/2/3'>Cartesian Product A x B</li>  <li><a href='projects/cartesian/3'>Cartesian Product A x A</li>  <li><a href='projects/goldbach/100'>Goldbach</li> <li><a href='projects/collatz/1234'>Collatz Sequence</li> <li><a href='projects/queens/5'>N Queens Puzzle</li> <li><a href='projects/quicksort'><mark>QuickSort</mark></li>  <li><a href='projects/knight'>Knight Puzzle</li> <li><a href='projects/maze'>Maze Puzzle</li> <li><a href='projects/iterator/spam'>IteratorReverse</li> <li><a href='projects/primes/100'>IteratorPrimes</li> <li><a href='projects/mountain/1234321'>Mountain</li> <li><a href='projects/checkorder/1234321'>Check Order Arr</li> <li><a href='projects/countingsort/1234321'><mark>Sorting By Counting</mark></li>  <li><a href='projects/depressionForm/54321234'>Depression Form Relief</li> <li><a href='projects/freq/38765213'>Frequency</li>  <li><a href='projects/jumpsearch/38765213'><mark>Jump Search</mark></li><li><a href='projects/heapsort/38765213'><mark>HeapSort</mark></li><li><a href='projects/bst/38765213'>Binary Search Tree</li> <li><a href='projects/linkedlist/38765213'>Singly Linked List</li> <li><a href='projects/lis/123456'>Longest Increasing Subsequence - O(n^2) DynamicP</li>  <li><a href='projects/lis2/123456'>Longest Increasing Subsequence - O(n log n) </li> <li><a href='projects/babyloniansqrt/4'>Babylonian Square Root</li> <li><a href='projects/binarysearch/7'>Binary Search (Divide and Conquer)</li> <li><a href='projects/hanoi/3'>Towers of Hanoi (Divide et impera)</li> <li><a href='projects/longestconsecutive/5'>Longest Consecutive Subsequence</li> <li><a href='projects/knapsack/5'>Knapsack problem (Greedy) </li> <li><a href='projects/colormap/5'>Color Map problem (Greedy)</li> <li><a href='projects/picturecolor/5'>Photo Coloring (backtracking)</li> <li><a href='projects/collinearity/3'>Collinearity</li><li><a href='projects/areaoftriangle/3'> Area of Triangle Method</li> <li><a href='projects/equationline/-5/7/1/3'>Equation Of the Line from two points</li>  <li><a href='projects/distaline/-5/7/1/3/3/3'>dist(Point, Line)</li>  <li><a href='projects/parallel/3'>Parallel Lines</li> <li><a href='projects/salesman/3'>Salesman Traveling Problem | Graph Hamilton</li>  <li><a href='projects/mapcolor/3'>Map Color Problem (Backtracking)</li> <li><a href='projects/circles/3'>Relative Position of two circles</li> <li><a href='projects/hexa/AA/BB/CC'>GCD of Array of hexadecimals</li> <li><a href='projects/bfs/3'>Breadth First Search(BFS)</li> <li><a href='projects/dfs/3'>Depth First Search (DFS)</li> <li><a href='projects/royfloyd/3'>Roy-Floyd (Roy Warshall)</li> </ol></div>"
 
 @app.route('/about')
 
@@ -3637,3 +3637,349 @@ def mapcolor(n):
     """
     code += "</pre>"
     return "<div style='background-color:yellow;font-size: 55px'><h1>Four Map Colouring Problem</h1>" + " ".join(str(i) for i in solution[1]) +"<br/>" +" ".join(str(i) for i in solution[0]) +  "</div>" +  code
+
+@app.route('/projects/circles/<int:n>')
+
+def circles(n):
+
+    out = ""
+
+    class Circle:
+        def __init__(self, abs, ord, r):
+            self.x = abs
+            self.y = ord
+            self.r = r
+    def sqrt(n):
+        x = n
+        y = 1
+        e = 0.000001
+        while x - y > e:
+            x = (x + y) / 2
+            y = n / x
+        return x
+
+    def module(n):
+        if n < 0:
+            return -n
+        else:
+            return n
+
+    def dist(p,q):
+        return sqrt((q.y - p.y) * (q.y - p.y) + (q.x - p.x) * (q.x - p.x))
+
+    A = Circle(10,10,3)
+    B = Circle(2,2,1)
+    d = dist(A,B)
+    # https://doubleroot.in/lessons/circle/relative-postion-of-two-circles/
+    if d > A.r + B.r:
+        out = "Two Circles lying outside each other."
+    elif d == A.r + B.r:
+        out = "Two Circles touching each other externally."
+    elif d == module(B.r - A.r):
+        out = "Two circles touching each other internally."
+    elif d < module(B.r - A.r):
+        out = "One cicle is lying inside another."
+    elif d < A.r + B.r and d > module(B.r - A.r) :
+        out = "Two circles intersecting in two points. "
+
+    code = "<pre style='font-size: 30px'>"
+    code += """
+def circles(n):
+
+    out = ""
+
+    class Circle:
+
+        def __init__(self, abs, ord, r):
+            self.x = abs
+            self.y = ord
+            self.r = r
+
+    def sqrt(n):
+
+        x = n
+        y = 1
+        e = 0.000001
+        while x - y > e:
+            x = (x + y) / 2
+            y = n / x
+        return x
+
+    def module(n):
+
+        if n < 0:
+            return -n
+        else:
+            return n
+
+    def dist(p,q):
+
+        return sqrt((q.y - p.y) * (q.y - p.y) + (q.x - p.x) * (q.x - p.x))
+
+    A = Circle(10,10,3)
+    B = Circle(2,2,1)
+
+    d = dist(A,B)
+
+    if d > A.r + B.r:
+        out = "Two Circles lying outside each other."
+    elif d == A.r + B.r:
+        out = "Two Circles touching each other externally."
+    elif d == module(B.r - A.r):
+        out = "Two circles touching each other internally."
+    elif d < module(B.r - A.r):
+        out = "One cicle is lying inside another."
+    elif d < A.r + B.r and d > module(B.r - A.r) :
+        out = "Two circles intersecting in two points. "
+    return out
+
+    """
+    code += "</pre>"
+    return "<h1>Position Relative of Two Circles</h1>" + out + code
+
+@app.route('/projects/hexa/<string:x>/<string:y>/<string:z>')
+
+def hexaGCD( x, y, z):
+
+    def pow2(a,b):
+
+        p = 1
+
+        for i in range(1,b+1):
+            p = p * a
+        return p
+
+    def val(c):
+
+        if ord(c) >= ord('0') and ord(c) <= ord('9'):
+
+            return ord(c) - ord('0')
+
+        elif ord(c) >= ord('A') and ord(c) <= ord('Z'):
+
+            return ord(c) - ord('A') + 10
+
+    def conv(str):
+
+        n = len(str)
+
+        p = 0
+
+        num = 0
+
+        for i in range(n - 1, -1, -1):
+
+            num = num + val(str[i]) * pow2(16, p)
+
+            p += 1
+
+        return num
+
+    def gcd(a,b):
+
+        while a!=b:
+
+            if a > b:
+               a = a - b
+            else:
+               b = b - a
+
+        return a
+
+    GreatestCommonDivisor = gcd( conv( x ), conv( y ) )
+
+    GreatestCommonDivisor = gcd( GreatestCommonDivisor, conv(z) )
+
+    title = "<h1 style='background-color: blue;color: lightgreen;font-size:50px'>Greatest Commond Divisor of Three Hexadecimals</h1>"
+
+    code = "<pre style='font-size:30px;color: blue'>"
+
+    code += """
+
+def hexaGCD( x, y, z):
+
+    def pow2(a,b):
+
+        p = 1
+
+        for i in range(1,b+1):
+            p = p * a
+        return p
+
+    def val(c):
+
+        if ord(c) >= ord('0') and ord(c) <= ord('9'):
+
+            return ord(c) - ord('0')
+
+        elif ord(c) >= ord('A') and ord(c) <= ord('Z'):
+
+            return ord(c) - ord('A') + 10
+
+    def conv(str):
+
+        n = len(str)
+
+        p = 0
+
+        num = 0
+
+        for i in range(n - 1, -1, -1):
+
+            num = num + val(str[i]) * pow2(16, p)
+
+            p += 1
+
+        return num
+
+    def gcd(a,b):
+
+        while a!=b:
+
+            if a > b:
+               a = a - b
+            else:
+               b = b - a
+
+        return a
+
+    GreatestCommonDivisor = gcd(conv(x),conv(y))
+
+    GreatestCommonDivisor = gcd(GreatestCommonDivisor, conv(z))
+
+    return GreatestCommonDivisor
+
+print(hexaGCD("AA","BB","CC"))
+    """
+
+    code += "</pre>"
+
+    return title + "<h1 style='background-color: yellow'>GCD(%s,%s,%s)=%s</h1>"%(x,y,z,str(GreatestCommonDivisor)) + code
+
+@app.route('/projects/bfs/<int:n>')
+
+def bfs( n ):
+
+    nodes, edges = 9, 8
+
+    Q = [0] * (nodes+1)
+
+    matrix = [[0 for j in range(0, nodes+1)] for i in range(0, nodes+1)]
+
+    data = [[1,2],[1,3],[3,4],[3,5],[5,9],[4,6],[4,7],[4,8]]
+
+    explored = [0] * (nodes+1)
+
+    for vertex1, vertex2 in data:
+
+        matrix[vertex1][vertex2] = 1
+
+    startNode = 1
+
+    first = 0
+    last = 0
+    Q[first] = startNode
+
+    while first <= last:
+
+        node = Q[first]
+
+        for k in range(0, nodes+1):
+
+            if 1 == matrix[node][k] and explored[k] == 0:
+
+                last += 1
+                Q[last] = k
+                explored[k] = 1
+
+        first+=1
+
+    out = []
+
+    for i in range(0, nodes):
+        out.append(Q[i])
+
+    title = "<h1 style='font-size:75px'>Breadth First Search</h1>"
+
+    return title + " ".join(str(i) for i in out)
+
+
+@app.route('/projects/dfs/<int:n>')
+
+def dfs( n ):
+
+    def DepthFirstSearch(node):
+
+        out.append(node)
+
+        explored[node] = 1
+
+        for k in range(nodes):
+
+            if matrix[node][k] == 1 and explored[k] == 0:
+
+                DepthFirstSearch(k)
+
+    nodes, edges = 9, 8
+
+    matrix = [[0 for j in range(0, nodes+1)] for i in range(0, nodes+1)]
+
+    data = [[1,2],[1,3],[3,4],[3,5],[5,9],[4,6],[4,7],[4,8]]
+
+    explored = [0] * (nodes+1)
+
+    for vertex1, vertex2 in data:
+
+        matrix[vertex1][vertex2] = 1
+
+    startNode = 1
+
+    out = []
+
+    DepthFirstSearch(startNode)
+
+    title = "<h1 style='font-size:75px'>Depth First Search</h1>"
+
+    code = "<pre style='color: blue;font-size: 40px'>"
+    code += """
+
+@app.route('/projects/dfs/<int:n>')
+
+def dfs( n ):
+
+    def DepthFirstSearch(node):
+
+        out.append(node)
+
+        explored[node] = 1
+
+        for k in range(nodes):
+
+            if matrix[node][k] == 1 and explored[k] == 0:
+
+                DepthFirstSearch(k)
+
+    nodes, edges = 9, 8
+
+    matrix = [[0 for j in range(0, nodes+1)] for i in range(0, nodes+1)]
+
+    data = [[1,2],[1,3],[3,4],[3,5],[5,9],[4,6],[4,7],[4,8]]
+
+    explored = [0] * (nodes+1)
+
+    for vertex1, vertex2 in data:
+
+        matrix[vertex1][vertex2] = 1
+
+    startNode = 1
+
+    out = []
+
+    DepthFirstSearch(startNode)
+
+    return " ".join(str(i) for i in out)
+    """
+    code += "</pre>"
+
+    return title + " ".join(str(i) for i in out) + code
+
