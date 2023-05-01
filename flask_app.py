@@ -295,11 +295,18 @@ def succ():
 
     return False
 
+def _getMax(level):
+    max = 0
+    for i in range(1, level):
+        if stack[i]>max:
+            max= stack[i]
+    return max
+
 def _succ():
 
     global level, stack, n
 
-    if stack[level] < stack[level - 1] + 1:
+    if stack[level] < _getMax(level) + 1:
 
        stack[level] += 1
        return True
