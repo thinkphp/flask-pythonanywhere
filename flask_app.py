@@ -4039,7 +4039,110 @@ def dfs( n ):
 
 def FnStack( n ):
 
-    return "Stack Data Structure"
+    # Stack Data Structure.
+    class Stack:
+
+        def __init__(self, capacity):
+
+            self.capacity = capacity
+            self.vec = [0] * (capacity + 2)
+            self.top = -1
+
+
+        def push(self, elem):
+            if self.isFull() is False:
+               self.top +=1
+               self.vec[self.top] = elem
+            else:
+                return
+
+        def pop(self):
+            if self.isEmpty() is False:
+               top = self.vec[self.top]
+               self.top-=1
+               return top
+            else:
+               return
+
+        def isEmpty(self):
+            return self.top == -1
+
+        def isFull(self):
+            return self.capacity == self.top - 1
+
+        def getTop(self):
+            return self.vec[self.top]
+
+    st = Stack(100)
+
+    str = "MayAnnCampanera"
+
+    for i in str:
+        st.push(i)
+
+    rev = ""
+
+    for i in str:
+        letter = st.pop()
+        rev += letter
+
+    title = "<h1 style='font-size:75px'>Stack Data Structure</h1>"
+
+    code = "<pre style='color: blue;font-size: 40px'>"
+    code += """
+
+    class Stack:
+
+        def __init__(self, capacity):
+
+            self.capacity = capacity
+            self.vec = [0] * (capacity + 2)
+            self.top = -1
+
+
+        def push(self, elem):
+            if self.isFull() is False:
+               self.top +=1
+               self.vec[self.top] = elem
+            else:
+                return
+
+        def pop(self):
+            if self.isEmpty() is False:
+               top = self.vec[self.top]
+               self.top-=1
+               return top
+            else:
+               return
+
+        def isEmpty(self):
+            return self.top == -1
+
+        def isFull(self):
+            return self.capacity == self.top - 1
+
+        def getTop(self):
+            return self.vec[self.top]
+
+    st = Stack(100)
+
+    str = "MayAnnCampanera"
+
+    for i in str:
+        st.push(i)
+
+    rev = ""
+
+    for i in str:
+        letter = st.pop()
+        rev += letter
+
+
+    """
+    code += "</pre>"
+
+    return title + "<br/> Simple Application => <br/> Reverse a String: <br/>" + str + "<br/>" +  rev + code
+
 
 @app.route('/projects/queue/<int:n>')
 
