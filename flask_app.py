@@ -4087,6 +4087,7 @@ def FnStack( n ):
         rev += letter
 
     title = "<h1 style='font-size:75px'>Stack Data Structure</h1>"
+    title += "<ul><li>Push(data)</li><li>pop()</li><li>isEmpty()</li><li>isFull()</li></ul>"
 
     code = "<pre style='color: blue;font-size: 40px'>"
     code += """
@@ -4146,6 +4147,98 @@ def FnStack( n ):
 
 @app.route('/projects/queue/<int:n>')
 
+##
+## Queue Data Structure.
+## Methods:
+## - enqueue(data)
+## - dequeue()
+## - peek()
+## - getSize()
+##
 def FnQueue( n ):
+    class Node:
+        def __init__(self, data):
+            self.next = None
+            self.prev = None
+            self.data = data
 
-    return "Queue Data Structure"
+    class Queue:
+        def __init__(self):
+            self.tail = None
+            self.head = None
+            self.size = 0
+
+        def enqueue(self, data):
+            node = Node(data)
+            if self.size == 0:
+                self.tail = node
+                self.head = node
+            else:
+                self.tail.prev = node
+                node.next = self.tail
+                self.tail = node
+            self.size+=1
+
+        def dequeue(self):
+            if self.head == None:
+                return
+            else:
+                data = self.head.data
+                self.head = self.head.prev
+                self.size-=1
+                return data
+
+    q = Queue()
+    out = ""
+    for i in "MayAnnCampanera":
+        q.enqueue(i)
+    for i in "MayAnnCampanera":
+        result = q.dequeue()
+        out += str(result)
+
+    title = "<h1 style='font-size:75px'>Queue Data Structure</h1>"
+    title += "<ul><li>enqueue(data)</li><li>dequeue()</li><li>peek()</li><li>getSize()</li></ul>"
+
+    code = "<pre style='color: blue;font-size: 40px'>"
+    code += """
+class Node:
+        def __init__(self, data):
+            self.next = None
+            self.prev = None
+            self.data = data
+
+    class Queue:
+        def __init__(self):
+            self.tail = None
+            self.head = None
+            self.size = 0
+
+        def enqueue(self, data):
+            node = Node(data)
+            if self.size == 0:
+                self.tail = node
+                self.head = node
+            else:
+                self.tail.prev = node
+                node.next = self.tail
+                self.tail = node
+            self.size+=1
+
+        def dequeue(self):
+            if self.head == None:
+                return
+            else:
+                data = self.head.data
+                self.head = self.head.prev
+                self.size-=1
+                return data
+    q = Queue()
+
+    for i in "MayAnnCampanera":
+        q.enqueue(i)
+    for i in "MayAnnCampanera":
+        q.dequeue()
+    """
+    code += "</pre>"
+
+    return title + out + code
